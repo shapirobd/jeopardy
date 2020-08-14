@@ -20,7 +20,7 @@ class Jeopardy {
 			"http://jservice.io/api/categories",
 			{
 				params: { count: 100 },
-			}
+			}  
 		);
 		const idArray = responseOfCats.data.map((cat) => cat.id);
 		return _.sampleSize(idArray, game.NUM_CATEGORIES);
